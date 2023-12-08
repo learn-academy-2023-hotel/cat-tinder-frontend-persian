@@ -6,8 +6,8 @@ import CatEdit from "./pages/CatEdit";
 import CatIndex from "./pages/CatIndex";
 import CatNew from "./pages/CatNew";
 import CatShow from "./pages/CatShow";
-import Header from "./components/Footer";
-import Footer from "./components/Header";
+import Header from "./components/Header"
+import Footer from "./components/Footer";
 
 import mockCats from './mockCats';
 
