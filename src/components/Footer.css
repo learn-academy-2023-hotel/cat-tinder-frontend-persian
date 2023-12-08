@@ -1,7 +1,7 @@
 .footer {
-  font-size: 200px;
+  font-size: 20px;
   border:solid;
-  border-color: aqua;
+  border-color: seagreen;
   display: flex;
   justify-content: center;
 }

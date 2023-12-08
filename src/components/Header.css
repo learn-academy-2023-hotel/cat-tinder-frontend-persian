@@ -1,5 +1,7 @@
-.Header {
-    color: blue;
-    font-weight: 900;
-
+.header {
+    font-size: 20px;
+    border:solid;
+    border-color: seagreen;
+    display: flex;
+    justify-content: center;
  }
