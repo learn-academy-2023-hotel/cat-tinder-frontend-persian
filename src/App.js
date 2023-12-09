@@ -18,7 +18,7 @@ const App = () => {
     <>
     <Header />
     <Routes >
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/catedit" element={<CatEdit />} />
       <Route path="/catindex" element={<CatIndex />} />
       <Route path="/catnew" element={<CatNew />} />
