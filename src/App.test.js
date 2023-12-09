@@ -12,11 +12,10 @@ test('renders learn react link', () => {
   <NotFound />
   </BrowserRouter>)
 
-// screen.debug
+
 screen.logTestingPlaygroundURL()
 const homeElement = screen.getByText(/notfound/i)
 expect(homeElement).toBeInTheDocument()
-  // const linkElement = screen.getByText(/learn react/i);
-  // expect(linkElement).toBeInTheDocument()
+
 })
 })

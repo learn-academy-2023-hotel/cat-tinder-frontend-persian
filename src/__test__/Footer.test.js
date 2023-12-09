@@ -10,11 +10,10 @@ test('renders learn react link', () => {
   <App />
   </BrowserRouter>)
 
-// screen.debug
+
 screen.logTestingPlaygroundURL()
 const homeElement = screen.getByText(/created by oscar and andre/i)
 expect(homeElement).toBeInTheDocument()
-  // const linkElement = screen.getByText(/learn react/i);
-  // expect(linkElement).toBeInTheDocument()
+ 
 })
 })
