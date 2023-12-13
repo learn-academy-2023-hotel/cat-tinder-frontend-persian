@@ -8,9 +8,9 @@ import mockCats from "../mockCats"
 describe("<CatEdit />", () => {
   const renderEdit = () => {
     render(
-        <MemoryRouter initialEntries={["/CatEdit/1"]}>
+        <MemoryRouter initialEntries={["/catedit/1"]}>
         <Routes>
-          <Route path="/CatEdit/:id" element={<CatEdit cats={mockCats} />} />
+          <Route path="/catedit/:id" element={<CatEdit cats={mockCats} />} />
         </Routes>
       </MemoryRouter>
     );
