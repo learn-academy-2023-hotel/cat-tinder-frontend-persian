@@ -3,8 +3,9 @@ import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap"
 
 const CatIndex = ({ cats }) => {
   return (
+    <div className="bg">
     <div className="cards-index">
-      {cats.map((cat, index) => {
+      {cats?.map((cat, index) => {
         return (
           <Card
             style={{
@@ -29,6 +30,7 @@ const CatIndex = ({ cats }) => {
           </Card>
         )
       })}
+      </div>
       </div>
   )
   }

@@ -3,9 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { Form, FormGroup, Input, Label, Button } from "reactstrap"
 
 
-
-
-
 const CatNew = ({ createCat }) => {
   const navigate = useNavigate()
   const [newCat, setNewCat] = useState({
