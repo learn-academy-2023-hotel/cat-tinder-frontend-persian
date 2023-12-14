@@ -69,6 +69,7 @@ const readCats = () => {
     return (
     <>
     <Header />
+    <div className="body"> 
     <Routes >
       <Route path="/" element={<Home />} />
       <Route path="/catedit/:id" element={<CatEdit cats={cats} updateCat={updateCat}/>} />
@@ -77,7 +78,9 @@ const readCats = () => {
       <Route path="/catshow/:id" element={<CatShow cats={cats} deleteCat={deleteCat}/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
+    <br></br>
     <Footer />
+    </div>
     </>
   )
 }
