@@ -1,19 +1,24 @@
 import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header"
-
 import CatEdit from "./pages/CatEdit";
 import CatIndex from "./pages/CatIndex";
 import CatNew from "./pages/CatNew";
 import CatShow from "./pages/CatShow";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import { Routes, Route } from "react-router-dom";
+
+
+
 
 const App = () => {
   const [cats, setCats] = useState([])
 
-useEffect(() => {readCats()}, [])
+  useEffect( () => {
+    readCats()
+  }, [])
 
 const readCats = () => {
   fetch("http://localhost:3000/cats")
@@ -40,7 +45,8 @@ const readCats = () => {
     fetch(`http://localhost:3000/cats/${id}`, {
       body: JSON.stringify(selectedCat),
       headers: {
-        "Content-Type": "application/json",},
+        "Content-Type": "application/json",
+      },
         method: "PATCH",
       })
       .then((response) => response.json())
@@ -55,15 +61,12 @@ const readCats = () => {
         "Content-Type": "application/json"},
         method: "DELETE"})
       .then((response) => response.json())
-      .then(() => readCat())
+      .then(() => readCats())
       .catch((errors) => console.log("delete errors:", errors))
     }
     
-    
-  
 
-
-  return (
+    return (
     <>
     <Header />
     <Routes >
@@ -71,7 +74,7 @@ const readCats = () => {
       <Route path="/catedit/:id" element={<CatEdit cats={cats} updateCat={updateCat}/>} />
       <Route path="/catindex" element={<CatIndex cats={cats} />} />
       <Route path="/catnew" element={<CatNew createCat={createCat}/>} />
-      <Route path="/catshow/:id" element={<CatShow cats={cats}/>} />
+      <Route path="/catshow/:id" element={<CatShow cats={cats} deleteCat={deleteCat}/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
