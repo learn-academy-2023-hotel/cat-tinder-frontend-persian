@@ -173,12 +173,7 @@ body {
     margin-left: 2rem;
   }
   
-.catnew{
-  text-align: center;
-  margin: auto;
-  max-width: 400px;
-}
- 
+  
   .edit-button {
     display: flex;
     padding: 6px;
@@ -196,41 +191,51 @@ body {
     
   }
   
+  
   .edit-button:hover {
     background-color: #285c0e;
   }
+  .delete-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: crosshair;
+    transition: background-color 0.3s, transform 0.3s; 
+    position: fixed;
+    transform: translateX(-50%);
+    align-items: flex-start;
+  }
   
-.delete-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  padding: 10px 20px;
-  font-size: 10px;
-  cursor: crosshair;
-  transition: background-color 0.3s, transform 0.3s; 
-  position: fixed;
-  transform: translateX(-50%);
-  align-items: flex-start;
-}
-
-.delete-button:hover {
-  background-color: red; 
-}
-/* ... existing styles ... */
-
-.left-content {
-  text-align: left;
-  margin-right: 20px; /* Adjust as needed */
-}
-
-.right-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Adjust as needed */
-}
-
-/* ... existing styles ... */
+  .delete-button:hover {
+    background-color: red; 
+  }
+  
+  
+  .left-content {
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .catedit{
+    
+  }
+  
+  
+  .catedit{
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+  }
+  

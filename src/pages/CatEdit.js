@@ -28,6 +28,7 @@ const CatEdit = ({ cats, updateCat }) => {
   }
 
   return (
+    <div className='catedit'>
     <Form>
     <FormGroup>
       <Label for="name">Name</Label>
@@ -49,6 +50,7 @@ const CatEdit = ({ cats, updateCat }) => {
     Submit Updated Cat
     </Button>
   </Form>   
+  </div>
   )
 }
 
