@@ -1,6 +1,6 @@
 ## CSS STYLE
 
-- Background: 
+- Background: done
 - Font:
 - Style of Cards:
 - Better descriptions of cats

@@ -1,8 +1,8 @@
- body {
-  background-image: radial-gradient(circle, rgb(205, 33, 33), rgb(212, 39, 39), rgb(217, 14, 14));
-  background-repeat: no-repeat
+body {
+  background: #ece7e1;
+  background-repeat: no-repeat;
+}
 
- }
 .cards-index {
   display: flex;
   align-items: center;
@@ -14,6 +14,46 @@
   
 }
 
+.home {
+  font-family: "Lucida Handwriting", cursive;
+
+}
+
+.image {
+  height: 446px;
+  width: 343px;
+}
+
+.image .rectangle {
+  height: 446px;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 343px;
+}
+
+
+.description {
+  font-family: Arial, sans-serif;
+  color: #1a1818;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 2;
+  max-width: 600px;
+  overflow-wrap: break-word;
+  margin: 100px 100px;
+}
+
+.tinderImage{
+  margin-left: auto;
+  display: block;
+  height: 70vh;
+  margin-top: -300px;
+  margin-right: 200px;
+  width: 25%;
+}
+
 .notFound{
   font-size: 25px;
   border:solid;
@@ -22,14 +62,180 @@
   justify-content: center
 }
 
-.bg {
- background: rgb(30, 30, 30);
-    color: white;
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
 .image-structure {
   max-width: 50vh; 
   height: 60vh
 }
+
+.header {
+  height: 5rem;
+  width: 100vw;
+  max-width: 150rem;
+  margin: 0 auto; 
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  height: 5rem;
+  width: 4rem;
+  position: left;
+  align-items: left;
+  background: transparent
+}
+
+.desktopMenuList {
+   margin: 1rem;
+   cursor: pointer;
+   color: #1a1818;
+   text-decoration: none;
+}
+
+.desktopMenuList:hover {
+  color: white;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid white;
+  animation: shake 0.5s;
+}
+
+.desktopMenu {
+  background: #ece7e1;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .50rem 2rem;
+  border-radius: 2rem;
+  margin-left: auto;
+  font-size: 1.0rem;
+  
+}
+
+.footer {
+  font-size: 16px;
+  border:solid;
+  border-color: white;
+  display: flex;
+  justify-content: center;
+  bottom: 0%;
+  position: fixed;
+}
+
+/* Andre */
+
+.cards-index {
+  display: flex;
+  align-items: stretch;
+  margin: auto;
+  justify-content: center;
+  width: 100vw;
+  max-width: 65rem;
+  gap: 1rem;
+  text-align: center;
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.image-structure{
+    align-items: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    height: 100vh;
+}
+  .image-structure img{
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 2rem;
+  }
+  .cat-info {
+    margin-top: 2rem;
+    margin-bottom: auto;
+    margin-left: 2rem;
+    font-weight: 150;
+    align-self: baseline;
+    font-size: 20px;
+    margin-right: auto;
+    flex-flow: row;
+    max-width: 600px;
+  }
+  .name-age {
+    margin-left: 2rem;
+  }
+  
+  
+  .edit-button {
+    display: flex;
+    padding: 6px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #1e2f0a;
+    border: 2rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: auto;
+    
+  }
+  
+  
+  .edit-button:hover {
+    background-color: #285c0e;
+  }
+  .delete-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: crosshair;
+    transition: background-color 0.3s, transform 0.3s; 
+    position: fixed;
+    transform: translateX(-50%);
+    align-items: flex-start;
+  }
+  
+  .delete-button:hover {
+    background-color: red; 
+  }
+  
+  
+  .left-content {
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .catedit{
+    
+  }
+  
+  
+  .catedit{
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+  }
+  

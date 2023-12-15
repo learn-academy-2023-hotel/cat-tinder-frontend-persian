@@ -69,15 +69,22 @@ const readCats = () => {
     return (
     <>
     <Header />
+    <div className="body"> 
     <Routes >
+      
       <Route path="/" element={<Home />} />
       <Route path="/catedit/:id" element={<CatEdit cats={cats} updateCat={updateCat}/>} />
       <Route path="/catindex" element={<CatIndex cats={cats} />} />
       <Route path="/catnew" element={<CatNew createCat={createCat}/>} />
-      <Route path="/catshow/:id" element={<CatShow cats={cats} deleteCat={deleteCat}/>} />
       <Route path="*" element={<NotFound />} />
+      {/* <Route path="/catshow/:id" element={<CatShow cats={cats} deleteCat={deleteCat}/>} /> */}
+      <Route path="/catshow/:id/:name/:age" element={<CatShow cats={cats} deleteCat={deleteCat} />}
+/>
+
     </Routes>
+    <br></br>
     <Footer />
+    </div>
     </>
   )
 }
