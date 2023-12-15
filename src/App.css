@@ -1,4 +1,4 @@
-  body {
+body {
   background: #ece7e1;
   background-repeat: no-repeat;
 }
@@ -161,14 +161,23 @@
   .cat-info {
     margin-top: 2rem;
     margin-bottom: auto;
-    margin-left: 12rem;
+    margin-left: 2rem;
     font-weight: 150;
+    align-self: baseline;
     font-size: 20px;
     margin-right: auto;
     flex-flow: row;
     max-width: 600px;
   }
+  .name-age {
+    margin-left: 2rem;
+  }
   
+.catnew{
+  text-align: center;
+  margin: auto;
+  max-width: 400px;
+}
  
   .edit-button {
     display: flex;
@@ -210,3 +219,18 @@
 .delete-button:hover {
   background-color: red; 
 }
+/* ... existing styles ... */
+
+.left-content {
+  text-align: left;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Adjust as needed */
+}
+
+/* ... existing styles ... */
