@@ -6,7 +6,7 @@ const Header = () => {
     <nav className="header">
       <div>
         <img
-          src={"https://i.etsystatic.com/22181001/r/il/b45856/2769871019/il_1140xN.2769871019_bvwh.jpg"}
+          src={"https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/c3f48770-f720-4b19-42e2-557269dc6700/preview"}
           alt="Picture of cat"
           className='logo'
         />
