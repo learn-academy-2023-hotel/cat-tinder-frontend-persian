@@ -15,29 +15,35 @@ const CatShow = ({ cats, deleteCat }) => {
   };
 
   return (
-    <div className="image-structure">
+    <>
+      <div className="image-structure">
+        {selectedCat && (
+          <>
+            <img alt={`${selectedCat.name}'s profile`} src={selectedCat.image} />
+            <div>
+              <div className="name-age">
+                <p>Name: {name}</p>
+                <p>Age: {age}</p>
+              </div>
+                <h3 className="cat-info">{selectedCat.enjoys}</h3>
+              </div>
+          </>
+        )}
+      </div>
       {selectedCat && (
-        <>
-          <NavLink to={`/catedit/${selectedCat.id}`} className="edit-button">
-            Edit Cat
-          </NavLink>
-          <img alt={`${selectedCat.name}'s profile`} src={selectedCat.image} />
-          <div>
-            <div className="name-age">
-            <p>Name: {name}</p>
-            <p>Age: {age}</p>
-            </div>
-          <h3 className="cat-info">{selectedCat.enjoys}</h3>
-          </div>
-        </>
-      )}
-      <NavLink to="/catindex">
-        <button onClick={handleDelete} className="delete-button">
-          Delete Cat
-        </button>
-      </NavLink>
-    </div>
-  );
+          <>
+            <NavLink to="/catindex">
+              <button onClick={handleDelete} className="delete-button">
+              Delete Cat
+              </button>
+            </NavLink>
+            <NavLink to={`/catedit/${selectedCat.id}`} className="edit-button">
+              Edit Cat
+            </NavLink>
+          </>
+        )}
+    </>
+  )
 };
 
 export default CatShow;

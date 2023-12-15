@@ -127,7 +127,6 @@ body {
   position: fixed;
 }
 
-/* Andre */
 
 .cards-index {
   display: flex;
@@ -146,7 +145,6 @@ body {
 .image-structure{
     align-items: center;
     display: flex;
-    align-items: center;
     margin: auto;
     justify-content: center;
     height: 100vh;
@@ -164,10 +162,11 @@ body {
     margin-left: 2rem;
     font-weight: 150;
     align-self: baseline;
-    font-size: 20px;
     margin-right: auto;
-    flex-flow: row;
-    max-width: 600px;
+    overflow-wrap: break-word;
+    flex-basis: 40vh;
+    font-size: 20px;
+   
   }
   .name-age {
     margin-left: 2rem;
@@ -175,19 +174,18 @@ body {
   
   
   .edit-button {
-    display: flex;
-    padding: 6px;
-    font-size: 10px;
-    font-weight: bold;
-    text-decoration: none;
+    bottom: 20px;
+    right: 120px;
+    background-color: black;
     color: white;
-    background-color: #1e2f0a;
-    border: 2rem;
-    margin-right: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    flex: auto;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: cell;
+    transition: background-color 0.3s, transform 0.3s; 
+    position: fixed;
+    transform: translateX(-50%);
+    align-items: flex-start;
     
   }
   
@@ -227,11 +225,12 @@ body {
     align-items: center;
     
   }
-  
-  .catedit{
-    
+
+  .catnew{
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
   }
-  
   
   .catedit{
     text-align: center;
